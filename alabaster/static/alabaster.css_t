@@ -18,7 +18,7 @@
 /* -- page layout ----------------------------------------------------------- */
 
 body {
-    font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
+    font-family: serif;
     font-size: 17px;
     background-color: white;
     color: #000;
@@ -112,11 +112,11 @@ div.sphinxsidebarwrapper p.blurb {
 
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: serif;
     color: {{ theme_sidebar_header }};
     font-size: 24px;
     font-weight: normal;
-    margin: 0 0 5px 0;
+    margin: 1.5em 0 5px 0;
     padding: 0;
 }
 
@@ -156,15 +156,15 @@ div.sphinxsidebar ul li.toctree-l2 > a {
 
 div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
-    font-family: 'Georgia', serif;
+    font-family: serif;
     font-size: 1em;
 }
 
 div.sphinxsidebar hr {
     border: none;
     height: 1px;
-    color: {{ theme_sidebar_link_underscore }};
-    background: {{ theme_sidebar_link_underscore }};
+    color: #fff; //{{ theme_sidebar_link_underscore }};
+    background: #fff; //{{ theme_sidebar_link_underscore }};
 
     text-align: left;
     margin-left: 0;
@@ -189,7 +189,7 @@ div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: serif;
     font-weight: normal;
     margin: 30px 0px 10px 0px;
     padding: 0;
@@ -232,7 +232,7 @@ dd div.admonition {
 }
 
 div.admonition p.admonition-title {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: serif;
     font-weight: normal;
     font-size: 24px;
     margin: 0 0 10px 0;
