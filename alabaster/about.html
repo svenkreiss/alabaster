@@ -1,23 +1,26 @@
-{% if theme_logo %}
-<p class="logo">
-  <a href="{{ pathto(master_doc) }}">
-    <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
-    {% if theme_logo_name|lower == 'true' %}
-    <h1 class="logo logo-name">{{ project }}</h2>
-    {% endif %}
-  </a>
-</p>
-{% else %}
-<h1 class="logo"><a href="{{ pathto(master_doc) }}">{{ project }}</a></h1>
-{% endif %}
+
+<h1 class="logo logo-name"><a href="{{ pathto(master_doc) }}">{{ project }}</a></h1>
 
 {% if theme_description %}
 <p class="blurb">{{ theme_description }}</p>
 {% endif %}
 
+<p class="blurb">
+  This is the documentation for version {{ version }}.
+  {% if version in ["0.3.0","0.3.1","0.3.2","0.3.3","0.3.4"] %}
+    Version 0.2 is
+    <a href="http://www.svenkreiss.com/databench/v0.2/">here</a>.
+  {% endif %}
+  {% if version in ["0.2.15"] %}
+    Version 0.3 is
+    <a href="http://www.svenkreiss.com/databench/v0.3/">here</a>.
+  {% endif %}
+</p>
+
+
 {% if theme_github_button|lower == 'true' %}
 <p>
-<iframe src="http://ghbtns.com/github-btn.html?user={{ theme_github_user }}&repo={{ theme_github_repo }}&type={{ theme_github_type }}&count={{ theme_github_count }}&size=large"
+<iframe src="http://ghbtns.com/github-btn.html?user={{ theme_github_user }}&amp;repo={{ theme_github_repo }}&amp;type={{ theme_github_type }}&amp;count={{ theme_github_count }}&amp;size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
 {% endif %}

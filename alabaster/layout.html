@@ -5,6 +5,20 @@
     <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@svenkreiss">
+  <meta name="twitter:title" content="Databench Docs">
+  {%- if theme_description %}
+  <meta name="twitter:description" content="{{theme_description|striptags}}">
+  {% endif -%}
+  <meta name="twitter:image:src" content="http://www.svenkreiss.com/databench/v0.3/{{ pathto('_static/' ~ logo, 1) }}">
+  <meta name="twitter:url" content="http://www.svenkreiss.com/databench/">
+
+  <meta property="og:title" content="Databench Docs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://www.svenkreiss.com/databench/v0.3/{{ pathto('_static/' ~ logo, 1) }}" />
+  <meta property="og:url" content="http://www.svenkreiss.com/databench/" />
 {% endblock %}
 {%- block relbar2 %}{% endblock %}
 {%- block footer %}
