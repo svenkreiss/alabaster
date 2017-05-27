@@ -318,14 +318,14 @@ img.screenshot {
 }
 
 table.docutils {
-    border: 1px solid #888;
+    border: 1px solid #ccc;
     -moz-box-shadow: 2px 2px 4px #eee;
     -webkit-box-shadow: 2px 2px 4px #eee;
     box-shadow: 2px 2px 4px #eee;
 }
 
 table.docutils td, table.docutils th {
-    border: 1px solid #888;
+    border: 1px solid #ccc;
     padding: 0.25em 0.7em;
 }
 
